@@ -210,3 +210,9 @@ h1 .hl{ display:block; color:var(--yellow); }
 @media (min-width:960px){ .sticky-cta{ display:none; } }
 @media (prefers-reduced-motion:reduce){ html{ scroll-behavior:auto; } .btn, .play{ transition:none; } }
 @media (max-width:959px){ .hand-note{ display:none; } .counter-phone{ padding-top:10px; } }
+
+
+/* ---------- revisão: regras de interface (toque, âncoras, foco) ---------- */
+html{ touch-action:manipulation; -webkit-tap-highlight-color:rgba(255,201,40,.25); }
+main [id]{ scroll-margin-top:84px; }
+@media (max-width:959px){ html{ scroll-padding-bottom:96px; } }
