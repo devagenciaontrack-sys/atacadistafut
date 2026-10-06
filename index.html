@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wdth,wght@62..125,500..900&family=Inter:wght@400;500;600;700&family=Permanent+Marker&display=swap">
-<link rel="stylesheet" href="style.css?v=5">
+<link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 
@@ -49,33 +49,34 @@
 
 <main id="conteudo">
 
-  <!-- HERO: placa de balcão (amarela) + parede de estoque (azul), de ponta a ponta -->
+  <!-- HERO -->
   <section class="hero">
-    <div class="hero-grid">
-      <div class="hero-sign">
+    <div class="wrap hero-grid">
+      <div class="hero-head">
         <p class="eyebrow">Atacado exclusivo para revenda</p>
-        <h1><span class="sign-main">Aqui a venda é para lojista.</span> <span class="sign-plaque">Não para torcedor.</span></h1>
+        <h1>Aqui a venda é para lojista. <span class="hl">Não para torcedor.</span></h1>
       </div>
 
-      <div class="hero-wall">
-        <div class="hero-video">
-          <div class="photo">
-            <span class="tape tape-tl" aria-hidden="true"></span>
-            <span class="tape tape-br" aria-hidden="true"></span>
-            <div class="video" data-video-id="EGvx4QLrc-0" data-track-play="atacadista_video_play">
-              <button type="button" class="video-poster" aria-label="Assistir ao vídeo: A gente não vende pra torcedor">
+      <div class="hero-video">
+        <div class="photo">
+          <span class="tape tape-tl" aria-hidden="true"></span>
+          <div class="video" data-video-id="EGvx4QLrc-0" data-track-play="atacadista_video_play">
+            <button type="button" class="video-poster" aria-label="Assistir ao vídeo: A gente não vende pra torcedor">
               <img src="assets/video-capa.jpg" alt="" width="720" height="1280" decoding="async" fetchpriority="high">
               <span class="play" aria-hidden="true"><svg class="ic"><use href="#i-play"/></svg></span>
             </button>
-            </div>
-            <p class="photo-caption">“A gente não vende pra torcedor.”</p>
           </div>
+          <p class="photo-caption">“A gente não vende pra torcedor.”</p>
+        </div>
+        <div class="box-label" aria-hidden="true">
+          <span class="box-label-row"><small>Para</small><b class="marker">lojista / revenda</b></span>
+          <span class="box-label-row"><small>Não</small><b class="marker strike">torcedor</b></span>
         </div>
       </div>
 
       <div class="hero-body">
         <p class="lead">Se você compra para revender, consulte as opções disponíveis e acesse o atacado diretamente pelo celular.</p>
-        <a class="btn btn-hero btn-lg" href="https://foxappy.com/link?store=atkfut" data-track="atacadista_app_click" data-location="hero">ACESSAR O ATACADO</a>
+        <a class="btn btn-yellow btn-lg" href="https://foxappy.com/link?store=atkfut" data-track="atacadista_app_click" data-location="hero">ACESSAR O ATACADO</a>
         <p class="micro">Acesso pelo aplicativo • Consulte antes de comprar</p>
       </div>
     </div>
