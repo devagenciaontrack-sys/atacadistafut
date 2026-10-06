@@ -9,23 +9,24 @@
 <meta property="og:title" content="Atacadista Fut — Atacado para quem vende">
 <meta property="og:description" content="Aqui a venda é para lojista. Não para torcedor.">
 <meta property="og:type" content="website">
+<meta property="og:image" content="assets/video-capa.jpg">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23102A43'/%3E%3Cpath d='M14 18h26l10 14-10 14H14z' fill='%23FFC928'/%3E%3Ccircle cx='22' cy='32' r='4' fill='%23102A43'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wdth,wght@62..125,500..900&family=Inter:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wdth,wght@62..125,500..900&family=Inter:wght@400;500;600;700&family=Permanent+Marker&display=swap">
+<link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
 
-<!-- ícones -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
-    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></symbol>
-    <symbol id="i-check" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="2"/><path d="m8 12.5 3 3 5-6.5"/></symbol>
-    <symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6.5h11M9 12h11M9 17.5h11"/><path d="M4 6.5h1M4 12h1M4 17.5h1"/></symbol>
-    <symbol id="i-box" viewBox="0 0 24 24"><path d="M3.5 7.5 12 3l8.5 4.5v9L12 21l-8.5-4.5z"/><path d="M3.5 7.5 12 12l8.5-4.5M12 12v9"/><path d="m7.8 5.2 8.5 4.6"/></symbol>
-    <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
     <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7Z"/></symbol>
+    <!-- traços feitos à mão (marcador) -->
+    <symbol id="h-check" viewBox="0 0 32 32"><path d="M4 17c3 1.5 6 5 7.5 9 3.5-9 9-16.5 17-22"/></symbol>
+    <symbol id="h-x" viewBox="0 0 32 32"><path d="M6 5c6 7 13 15 21 23M26 4C19 11 12 19 5 27"/></symbol>
+    <symbol id="h-arrow" viewBox="0 0 120 70"><path d="M6 10c22 2 52 8 74 26 9 7 15 14 20 24"/><path d="M84 56c6 2 11 3 17 5 1-6 1-12 0-18"/></symbol>
+    <symbol id="h-line" viewBox="0 0 300 14"><path d="M3 9c40-5 90-7 140-5 52 2 100 1 154-3"/></symbol>
   </defs>
 </svg>
 
@@ -52,119 +53,78 @@
   <section class="hero">
     <div class="wrap hero-grid">
       <div class="hero-head">
-        <p class="eyebrow"><span class="eyebrow-tag">B2B</span>ATACADO EXCLUSIVO PARA REVENDA</p>
-        <h1>Aqui a venda é para lojista.<br><span class="hl">Não para torcedor.</span></h1>
+        <p class="eyebrow">Atacado exclusivo para revenda</p>
+        <h1>Aqui a venda é para lojista. <span class="hl">Não para torcedor.</span></h1>
       </div>
 
       <div class="hero-video">
-        <div class="label">
-          <span class="label-hole" aria-hidden="true"></span>
-          <div class="label-head">
-            <span class="barcode" aria-hidden="true"></span>
-            <span class="label-code">ATK · REV</span>
-          </div>
-          <dl class="label-fields">
-            <div><dt>Para</dt><dd>Lojista / Revendedor</dd></div>
-            <div><dt>Canal</dt><dd>B2B</dd></div>
-          </dl>
+        <div class="photo">
+          <span class="tape tape-tl" aria-hidden="true"></span>
           <div class="video" data-video-id="EGvx4QLrc-0" data-track-play="atacadista_video_play">
             <button type="button" class="video-poster" aria-label="Assistir ao vídeo: A gente não vende pra torcedor">
-              <img src="https://i.ytimg.com/vi/EGvx4QLrc-0/hqdefault.jpg" alt="" width="480" height="360" decoding="async">
-              <span class="play" aria-hidden="true"></span>
+              <img src="assets/video-capa.jpg" alt="" width="720" height="1280" decoding="async" fetchpriority="high">
+              <span class="play" aria-hidden="true"><svg class="ic"><use href="#i-play"/></svg></span>
             </button>
           </div>
-          <p class="label-quote">“A gente não vende pra torcedor.”</p>
+          <p class="photo-caption">“A gente não vende pra torcedor.”</p>
         </div>
-        <div class="stamp" aria-hidden="true"><span>Exclusivo</span><b>para revenda</b></div>
+        <div class="box-label" aria-hidden="true">
+          <span class="box-label-row"><small>Para</small><b class="marker">lojista / revenda</b></span>
+          <span class="box-label-row"><small>Não</small><b class="marker strike">torcedor</b></span>
+        </div>
       </div>
 
       <div class="hero-body">
         <p class="lead">Se você compra para revender, consulte as opções disponíveis e acesse o atacado diretamente pelo celular.</p>
         <a class="btn btn-yellow btn-lg" href="https://foxappy.com/link?store=atkfut" data-track="atacadista_app_click" data-location="hero">ACESSAR O ATACADO <svg class="ic"><use href="#i-arrow"/></svg></a>
-        <p class="micro"><span>Acesso pelo aplicativo</span><span class="dot" aria-hidden="true"></span><span>Consulte antes de comprar</span></p>
+        <p class="micro">Acesso pelo aplicativo • Consulte antes de comprar</p>
       </div>
     </div>
   </section>
 
-  <!-- faixa de sinalização -->
-  <div class="ticker" aria-hidden="true">
-    <div class="ticker-track">
-      <span>ATACADO PARA QUEM VENDE</span><i></i><span>LOJISTAS</span><i></i><span>REVENDEDORES</span><i></i><span>INSTAGRAM</span><i></i><span>WHATSAPP</span><i></i><span>MARKETPLACE</span><i></i><span>REPOSIÇÃO</span><i></i>
-      <span>ATACADO PARA QUEM VENDE</span><i></i><span>LOJISTAS</span><i></i><span>REVENDEDORES</span><i></i><span>INSTAGRAM</span><i></i><span>WHATSAPP</span><i></i><span>MARKETPLACE</span><i></i><span>REPOSIÇÃO</span><i></i>
-    </div>
-  </div>
-
   <!-- SEÇÃO 02 -->
   <section class="who" id="para-quem-e">
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="sec-code"><span>02</span>Para quem é</p>
-        <h2>Antes de continuar: você compra para vender?</h2>
+    <div class="wrap who-grid">
+      <h2 class="who-title">Antes de continuar: <span class="under">você compra para vender?<svg aria-hidden="true"><use href="#h-line"/></svg></span></h2>
+
+      <div class="order">
+        <div class="order-head">
+          <b>É para você se:</b>
+          <span class="marker">marque o seu</span>
+        </div>
+        <ul class="order-list">
+          <li><svg class="mk" aria-hidden="true"><use href="#h-check"/></svg>possui loja;</li>
+          <li><svg class="mk" aria-hidden="true"><use href="#h-check"/></svg>vende pelo Instagram;</li>
+          <li><svg class="mk" aria-hidden="true"><use href="#h-check"/></svg>atende pelo WhatsApp;</li>
+          <li><svg class="mk" aria-hidden="true"><use href="#h-check"/></svg>vende em marketplace;</li>
+          <li><svg class="mk" aria-hidden="true"><use href="#h-check"/></svg>compra para revenda;</li>
+          <li><svg class="mk" aria-hidden="true"><use href="#h-check"/></svg>precisa repor mercadoria.</li>
+        </ul>
       </div>
-      <div class="who-grid">
-        <div class="sheet">
-          <div class="sheet-head">
-            <h3>É para você se:</h3>
-            <span class="sheet-tag">Checklist do lojista</span>
-          </div>
-          <ul class="checklist">
-            <li><svg class="ic"><use href="#i-check"/></svg>possui loja;</li>
-            <li><svg class="ic"><use href="#i-check"/></svg>vende pelo Instagram;</li>
-            <li><svg class="ic"><use href="#i-check"/></svg>atende pelo WhatsApp;</li>
-            <li><svg class="ic"><use href="#i-check"/></svg>vende em marketplace;</li>
-            <li><svg class="ic"><use href="#i-check"/></svg>compra para revenda;</li>
-            <li><svg class="ic"><use href="#i-check"/></svg>precisa repor mercadoria.</li>
-          </ul>
-        </div>
-        <div class="warning">
-          <div class="tape" aria-hidden="true"></div>
-          <div class="warning-body">
-            <span class="warning-icon" aria-hidden="true"><svg class="ic"><use href="#i-x"/></svg></span>
-            <h3>Não é venda ao consumidor final.</h3>
-            <p>Se você está procurando somente uma peça para uso próprio, esta operação não foi criada como varejo. O foco da Atacadista Fut é atender compradores com finalidade de revenda.</p>
-          </div>
-          <div class="tape" aria-hidden="true"></div>
-        </div>
+
+      <div class="notice">
+        <svg class="notice-x" aria-hidden="true"><use href="#h-x"/></svg>
+        <h3>Não é venda ao consumidor final.</h3>
+        <p>Se você está procurando somente uma peça para uso próprio, esta operação não foi criada como varejo. O foco da Atacadista Fut é atender compradores com finalidade de revenda.</p>
       </div>
     </div>
   </section>
 
   <!-- SEÇÃO 03 -->
   <section class="counter" id="aplicativo">
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="sec-code"><span>03</span>Aplicativo</p>
-        <h2>Seu balcão de compra agora cabe no celular.</h2>
+    <div class="wrap counter-grid">
+      <div class="counter-phone">
+        <div class="phone"><img src="assets/tela-app.jpg" alt="Tela inicial do aplicativo" width="736" height="1600" loading="lazy" decoding="async"></div>
+        <p class="hand-note"><span class="marker">o balcão é aqui</span><svg aria-hidden="true"><use href="#h-arrow"/></svg></p>
       </div>
-      <div class="shelf">
-        <article class="tag-card">
-          <span class="tag-hole" aria-hidden="true"></span>
-          <svg class="ic tag-ic"><use href="#i-search"/></svg>
-          <h3>CONSULTE</h3>
-          <p>Veja as opções disponíveis pelo aplicativo.</p>
-          <span class="tag-foot" aria-hidden="true"><span class="barcode sm"></span></span>
-        </article>
-        <article class="tag-card">
-          <span class="tag-hole" aria-hidden="true"></span>
-          <svg class="ic tag-ic"><use href="#i-check"/></svg>
-          <h3>ESCOLHA</h3>
-          <p>Avalie os produtos que fazem sentido para sua operação.</p>
-          <span class="tag-foot" aria-hidden="true"><span class="barcode sm"></span></span>
-        </article>
-        <article class="tag-card">
-          <span class="tag-hole" aria-hidden="true"></span>
-          <svg class="ic tag-ic"><use href="#i-list"/></svg>
-          <h3>ORGANIZE</h3>
-          <p>Defina o que deseja adquirir.</p>
-          <span class="tag-foot" aria-hidden="true"><span class="barcode sm"></span></span>
-        </article>
-        <article class="tag-card">
-          <span class="tag-hole" aria-hidden="true"></span>
-          <svg class="ic tag-ic"><use href="#i-box"/></svg>
-          <h3>REPONHA</h3>
-          <p>Volte ao aplicativo sempre que precisar avaliar uma nova compra.</p>
-          <span class="tag-foot" aria-hidden="true"><span class="barcode sm"></span></span>
-        </article>
+      <div class="counter-text">
+        <h2>Seu balcão de compra agora cabe no celular.</h2>
+        <dl class="pillars">
+          <div><dt>Consulte</dt><dd>Veja as opções disponíveis pelo aplicativo.</dd></div>
+          <div><dt>Escolha</dt><dd>Avalie os produtos que fazem sentido para sua operação.</dd></div>
+          <div><dt>Organize</dt><dd>Defina o que deseja adquirir.</dd></div>
+          <div><dt>Reponha</dt><dd>Volte ao aplicativo sempre que precisar avaliar uma nova compra.</dd></div>
+        </dl>
       </div>
     </div>
   </section>
@@ -172,15 +132,12 @@
   <!-- SEÇÃO 04 -->
   <section class="steps" id="como-funciona">
     <div class="wrap">
-      <div class="sec-head">
-        <p class="sec-code sec-code-light"><span>04</span>Como funciona</p>
-        <h2>Do catálogo à reposição sem complicação.</h2>
-      </div>
-      <ol class="flow">
-        <li><span class="n">01</span><div><h3>ACESSE</h3><p>Abra o aplicativo.</p></div></li>
-        <li><span class="n">02</span><div><h3>CONSULTE</h3><p>Veja as opções disponíveis.</p></div></li>
-        <li><span class="n">03</span><div><h3>SELECIONE</h3><p>Escolha conforme sua necessidade.</p></div></li>
-        <li><span class="n">04</span><div><h3>REPONHA</h3><p>Retorne quando precisar abastecer sua operação.</p></div></li>
+      <h2>Do catálogo à reposição sem complicação.</h2>
+      <ol class="route">
+        <li><span class="n">01</span><h3>ACESSE</h3><p>Abra o aplicativo.</p></li>
+        <li><span class="n">02</span><h3>CONSULTE</h3><p>Veja as opções disponíveis.</p></li>
+        <li><span class="n">03</span><h3>SELECIONE</h3><p>Escolha conforme sua necessidade.</p></li>
+        <li><span class="n">04</span><h3>REPONHA</h3><p>Retorne quando precisar abastecer sua operação.</p></li>
       </ol>
     </div>
   </section>
@@ -188,13 +145,16 @@
   <!-- CTA FINAL -->
   <section class="final" id="acessar">
     <div class="wrap final-grid">
+      <figure class="polaroid" aria-hidden="true">
+        <img src="assets/quadro.jpg" alt="" width="405" height="720" loading="lazy" decoding="async">
+        <figcaption class="marker">atacado para quem vende</figcaption>
+      </figure>
       <div class="final-copy">
         <h2>Seu próximo pedido pode começar agora.</h2>
         <p>Acesse o aplicativo e consulte as opções disponíveis para sua operação.</p>
         <a class="btn btn-navy btn-lg" href="https://foxappy.com/link?store=atkfut" data-track="atacadista_app_click" data-location="cta_final">ACESSAR ATACADO <svg class="ic"><use href="#i-arrow"/></svg></a>
       </div>
       <div class="qr" data-track-view="atacadista_qrcode_view">
-        <span class="label-hole" aria-hidden="true"></span>
         <div class="qr-code" role="img" aria-label="QR Code para acessar o aplicativo">
           <svg viewBox="-2 -2 33 33" shape-rendering="crispEdges"><path fill="#ffffff" d="M-2 -2h33v33H-2z"/><path stroke="#102A43" d="M0 0.5h7m4 0h1m2 0h1m1 0h5m1 0h7M0 1.5h1m5 0h1m2 0h4m1 0h4m2 0h1m1 0h1m5 0h1M0 2.5h1m1 0h3m1 0h1m1 0h1m1 0h3m2 0h2m1 0h1m3 0h1m1 0h3m1 0h1M0 3.5h1m1 0h3m1 0h1m1 0h1m6 0h3m1 0h1m2 0h1m1 0h3m1 0h1M0 4.5h1m1 0h3m1 0h1m1 0h1m4 0h1m2 0h5m1 0h1m1 0h3m1 0h1M0 5.5h1m5 0h1m1 0h1m2 0h5m1 0h2m3 0h1m5 0h1M0 6.5h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7M8 7.5h4m1 0h1m2 0h1m3 0h1M0 8.5h1m1 0h5m2 0h1m2 0h1m1 0h2m1 0h3m2 0h5M1 9.5h1m2 0h2m1 0h3m2 0h1m3 0h2m1 0h2m1 0h3m3 0h1M0 10.5h1m1 0h1m1 0h3m2 0h4m2 0h3m2 0h2m1 0h2M5 11.5h1m1 0h2m5 0h1m4 0h3m2 0h2m1 0h1M0 12.5h2m3 0h4m2 0h2m4 0h1m1 0h1m5 0h2M1 13.5h3m3 0h1m4 0h3m1 0h1m2 0h1m2 0h3m3 0h1M1 14.5h1m1 0h2m1 0h2m1 0h1m2 0h4m1 0h2m1 0h2m2 0h3M2 15.5h3m3 0h3m1 0h2m1 0h2m3 0h2m5 0h1M4 16.5h5m3 0h1m1 0h4m1 0h1m3 0h1m1 0h2M0 17.5h1m1 0h2m4 0h5m3 0h1m2 0h2m1 0h3m1 0h1m1 0h1M0 18.5h1m2 0h1m1 0h2m1 0h3m1 0h1m2 0h2m3 0h4m2 0h1M0 19.5h1m1 0h1m1 0h1m2 0h1m3 0h1m2 0h2m2 0h3m2 0h1m3 0h1M0 20.5h1m4 0h2m3 0h1m1 0h1m2 0h1m1 0h1m1 0h6m1 0h3M8 21.5h4m1 0h2m1 0h3m1 0h1m3 0h5M0 22.5h7m2 0h9m1 0h2m1 0h1m1 0h3M0 23.5h1m5 0h1m1 0h1m4 0h1m1 0h2m2 0h2m3 0h1M0 24.5h1m1 0h3m1 0h1m1 0h1m1 0h3m1 0h1m1 0h2m2 0h5m1 0h1M0 25.5h1m1 0h3m1 0h1m1 0h1m2 0h2m6 0h3m3 0h4M0 26.5h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h1m2 0h4m2 0h7M0 27.5h1m5 0h1m3 0h3m2 0h2m1 0h1m1 0h1m1 0h1m2 0h1m1 0h1M0 28.5h7m1 0h6m1 0h1m1 0h1m1 0h1m1 0h4m1 0h1"/></svg>
         </div>
@@ -206,10 +166,7 @@
   <!-- FAQ -->
   <section class="faq" id="duvidas">
     <div class="wrap faq-grid">
-      <div class="sec-head">
-        <p class="sec-code"><span>?</span>Dúvidas</p>
-        <h2>Perguntas frequentes</h2>
-      </div>
+      <h2>Perguntas frequentes</h2>
       <div class="faq-list">
         <details>
           <summary>Quem pode comprar?</summary>
@@ -241,7 +198,6 @@
 </main>
 
 <footer class="footer">
-  <div class="tape tape-thin" aria-hidden="true"></div>
   <div class="wrap footer-in">
     <div class="footer-brand">
       <a href="#" class="logo" aria-label="Atacadista Fut, início">
@@ -266,6 +222,6 @@
   <a class="btn btn-yellow btn-block" href="https://foxappy.com/link?store=atkfut" data-track="atacadista_app_click" data-location="sticky_mobile">ACESSAR ATACADO</a>
 </div>
 
-<script src="main.js"></script>
+<script src="main.js?v=2"></script>
 </body>
 </html>
